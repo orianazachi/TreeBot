@@ -3,7 +3,7 @@ let Discord = require("discord.js");
 let client = new Discord.Client();
 
 client.on("ready", () => {
-  console.log("The bot is online.");
+  client.user.setActivity("קרן קיימת לישראל", { type: "WATCHING" });
 });
 
 client.on("message", (message) => {
