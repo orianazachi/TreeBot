@@ -106,6 +106,7 @@ client.on("message", (message) => {
       "עץ תינוק",
       "עץ תמר",
       "עץ תמרה",
+      "עץ אלה"
     ];
     message.channel.send(
       `${answers[Math.floor(Math.random() * answers.length)]}`,
