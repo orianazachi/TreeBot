@@ -1,13 +1,4 @@
-const express = require("express");
-const app = express();
-app.get("/", (req, res) => {
-  res.send("דור השמן");
-});
-
-app.listen(3000, () => {
-  console.log("Project is Ready!");
-});
-
+const keep_alive = require('./keep_alive.js')
 let Discord = require("discord.js");
 let client = new Discord.Client();
 
@@ -122,6 +113,4 @@ client.on("message", (message) => {
   }
 });
 
-client.login(
-  "MTIwNDg2OTY4NTg3NTcxMjAxMA.GR6QLn.hB-IjLUQ-OBvC5JaWlZjTh1e4yDCCWhBalRm5s",
-);
+client.login(process.env.TOKEN);
