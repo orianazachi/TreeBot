@@ -7,7 +7,7 @@ client.on("ready", () => {
 });
 
 client.on("message", (message) => {
-  if (message.mentions.has(client.user)) {
+  if (message.mentions.users.has(client.user.id)) {
     let answers = [
       "עץ אקליפטוס",
       "עץ אגס",
